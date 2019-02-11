@@ -10,4 +10,4 @@ def artist_index(request):
 
 def song_list(request):
     context = {'songs': Song.objects.all()}
-    return render(request, 'tunr/song')
+    return render(request, 'tunr/song_list.html', context)
